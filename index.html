@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Project Convert Money</title>
+</head>
+
+<body>
+
+    <img src="assets/devLogo.png" alt="image-coin" class="image-coin">
+
+    <main>
+
+        
+            <label>
+                Converter <b>de</b>
+                <select id="select-real">
+                    <option> R$ <b>Real Brasileiro</b></option>
+                </select>
+            </label>
+
+
+
+            <label>
+                converter <b>para</b>
+                <select class="option">
+                    <option value="dolar">US$ <b>Dólar Americano</b> </option>
+                    <option value="Euro">€ <b>Euro</b></option>
+                </select>
+            </label>
+
+            <label>
+                Valor a ser convertido
+                <input class="input-currency" placeholder="R$ 10000">
+                <button class="convert-button">Converter</button>
+            </label>
+
+
+
+            <section class="bottom-box">
+
+                <img src="./assets/Real.svg" alt="brazil" class="coin">
+
+                <p class="currency">Real</p>
+                <h4 id="Real" class="currency-value-to-convert">R$ 0,00</h4>
+
+                <img src="./assets/arrowy.png" alt="Arrow" class="Arrow">
+
+                <img src="./assets/Dólar.svg" alt="usa" class="coin">
+                <p class="currency" id="currency-name">Dólar Americano</p>
+                <h4 id="dolar" class="currency-value" >US$ 0.00</h4>
+        </section>
+
+    </main>
+    </div>
+
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
