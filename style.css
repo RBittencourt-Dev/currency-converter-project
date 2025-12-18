@@ -81,6 +81,11 @@ section {
 
     }
 
+.currency-flag {
+    display: block;
+    margin: 10px auto;
+}
+
 .coin {
     display: block;
     margin: 10px auto;

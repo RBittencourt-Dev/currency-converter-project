@@ -19,7 +19,7 @@ function convertValues() {
 
 
 
-    if (currencySelect.value == "dolar") {
+    if (currencySelect.value == 'dolar') {
 
         currencyValueConverted.innerHTML = new Intl.NumberFormat('en-US', {
             style: 'currency',
@@ -28,16 +28,31 @@ function convertValues() {
 
     }
 //
-    if (currencySelect.value == "Euro") {
+    if (currencySelect.value == 'Euro') {
         currencyValueConverted.innerHTML = new Intl.NumberFormat('de-DE', {
             style: 'currency',
             currency: 'EUR'
         }).format(inputCurrencyValue / euroValueToday)
     }
 
+}
 
+function changeCurrency (){
+    const currencyName = document.getElementById('currency-name')
+    const currencyFlag = document.querySelector('.currency-flag')
+
+    if (currencySelect.value == 'dolar') {
+        currencyName.innerHTML = 'Dólar Americano'
+        currencyFlag.src = './assets/Dólar.svg'
+    }
+    
+    if (currencySelect.value == 'Euro') {
+        currencyName.innerHTML = 'Euro'
+        currencyFlag.src = './assets/Euro.svg'
+        
+    }
 
 }
 
-
+currencySelect.addEventListener('change', changeCurrency)
 convertButton.addEventListener('click', convertValues)
