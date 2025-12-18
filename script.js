@@ -49,9 +49,10 @@ function changeCurrency (){
     if (currencySelect.value == 'Euro') {
         currencyName.innerHTML = 'Euro'
         currencyFlag.src = './assets/Euro.svg'
-        
+
     }
 
+    convertValues()
 }
 
 currencySelect.addEventListener('change', changeCurrency)
