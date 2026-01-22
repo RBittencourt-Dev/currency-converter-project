@@ -7,14 +7,14 @@
 }
 
 body {
-    background:url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2cwcDdla3RneDQ2ZmR5aGlxa2J3NW51eDJzdWM0NTF2bDJtaG03diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rgzOwma0qMbM3x7Fqi/giphy.gif);
-    background-size: 100vw 100vh ;
+    background-color: #333333; 
+    
 }
 
-.image-coin {
-    width: 200px;
+.logo{
+    width: 300px;
     display: block;
-    margin: 20px auto;
+    margin: 77px auto;
 }
 
 main {
@@ -56,8 +56,8 @@ input {
 }
 
 button {
-    background: #ffd900;
-    color: rgb(128, 48, 48);
+    background: #037bdd;
+    color: white;
     border: none;
     width: 100%;
     height: 40px;
@@ -75,7 +75,7 @@ button:active {
 }
 
 section {
-    border: 1px solid #ffd900;
+    border: 1px solid #037bdd;
     border-radius: 20px;
     margin-top: 30px;
 
